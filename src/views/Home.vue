@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
     <Button v-for="(button, i) in buttons" :button="button" :key="i" @buttonClicked="handleClick"/>
   </div>
 </template>

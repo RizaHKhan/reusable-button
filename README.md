@@ -31,9 +31,7 @@ So in the template, receive the click:
 ```
 <Button @buttonClicked="handleClick">
 ```
-
-***** Note on the above that you don't need to specify the id in the tag, however it will be available to you in the method like so:
-
+The payload is available on the method that will be run called from the eventlistener as below:
 
 ```
 methods: {
@@ -42,3 +40,4 @@ methods: {
   }
 }
 ```
+

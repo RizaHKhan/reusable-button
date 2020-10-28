@@ -1,12 +1,7 @@
 <template>
-  <div>
-    <pre>
-      {{ button }}
-    </pre>
-    <button class="button" :class='button.conditionClass' @click="handleClick">
-      {{ button.title }}
-    </button>
-  </div>
+  <button class="button" :class='button.conditionClass' @click="handleClick">
+    {{ button.title }}
+  </button>
 </template>
 
 
@@ -15,7 +10,7 @@ export default {
   props: {
     button: {
       type: Object,
-      required: true
+      required: true,
     }
   },
   methods: {
@@ -31,6 +26,7 @@ export default {
   .button {
     border: solid 2px black;
     padding: 1rem 1.75rem;
+    margin: 0.5em;
   }
   .success {
     background: green;
