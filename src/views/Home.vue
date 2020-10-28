@@ -1,18 +1,54 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Button v-for="(button, i) in buttons" :button="button" :key="i" @buttonClicked="handleClick"/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+ import Button from '@/components/Button.vue'
 
 export default {
   name: "Home",
   components: {
-    HelloWorld
+    Button
+  },
+  computed: {
+    buttons() {
+      let buttons = []
+
+      const p1 = {
+        id: 1, 
+        conditionClass: 'danger',
+        title: "Penis 1",
+        page: 'Home 1'
+      }
+
+      const p2 = {
+        id: 2, 
+        conditionClass: 'warning',
+        title: "Penis 2",
+        page: 'Home 1'
+      }
+        
+      const p3 = {
+        id: 3, 
+        conditionClass: 'success',
+        title: "Penis 3",
+        page: 'Home 1'
+      }
+
+      buttons.push(p1)
+      buttons.push(p2)
+      buttons.push(p3)
+
+      return buttons;
+    }
+  },
+  methods: {
+    handleClick(id) {
+      console.log(id)
+    }
   }
 };
 </script>

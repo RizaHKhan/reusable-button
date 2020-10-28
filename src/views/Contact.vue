@@ -1,7 +1,7 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-    <Button :button="button" @buttonClicked="handleClick" />
+  <div class="contact">
+    <h1>This is the Contact Page</h1>
+    <Button :button="button" @buttonClicked="handleClick"/>
   </div>
 </template>
 
@@ -13,9 +13,9 @@ export default {
   data() {
     return {
       button: {
-        conditionClass: 'success',
-        title: 'From About',
-        page: 'About',
+        conditionClass: 'danger',
+        title: 'From Contact',
+        page: 'Contact'
       }
     }
   },
