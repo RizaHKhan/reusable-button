@@ -20,21 +20,21 @@ export default {
       const p1 = {
         id: 1, 
         conditionClass: 'danger',
-        title: "Penis 1",
+        title: "Button 1",
         page: 'Home 1'
       }
 
       const p2 = {
         id: 2, 
         conditionClass: 'warning',
-        title: "Penis 2",
+        title: "Button 2",
         page: 'Home 1'
       }
         
       const p3 = {
         id: 3, 
         conditionClass: 'success',
-        title: "Penis 3",
+        title: "Button 3",
         page: 'Home 1'
       }
 
